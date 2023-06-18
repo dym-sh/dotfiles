@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="ipad store">
+    <Crop method="1" value_1="150" value_2="150" value_3="115" value_4="115"/>
+    <Output folder="" filename="{Filename}_ipad" case="5" startIndex="1" format="PNG">
+        <Options overwrite="0" orgDate="false" keepMeta="false" keepICC="false" keepFolder="false" keepParentFolder="false" keepExtension="true" delOrg="true" multipage="false" allPages="false" openExplorer="false" openBrowser="false" clearItems="false"/>
+        <PNG level="9" interlaced="false" filter="0"/>
+    </Output>
+</XnView_script>

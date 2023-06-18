@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="flat (black bg)">
+    <Change_color_depth method="3" dither="-1" ncompo="-1" alpha="255" replace_alpha="false" back_color="#000000"/>
+    <Output folder="" filename="{Filename} [flat-b]" case="5" startIndex="1" format="PNG">
+        <Options overwrite="0" orgDate="false" keepMeta="false" keepICC="false" keepFolder="false" keepParentFolder="false" keepExtension="true" delOrg="true" multipage="false" allPages="false" openExplorer="false" beep="true" openBrowser="false" clearItems="false"/>
+        <PNG level="9" interlaced="false" filter="0"/>
+    </Output>
+</XnView_script>

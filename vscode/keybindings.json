@@ -1,0 +1,50 @@
+[
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "ctrl+cmd+=",
+		"command": "wwm.aligncode",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+meta+w",
+		"command": "-workbench.action.toggleTabsVisibility"
+	},
+	{
+		"key": "meta+c",
+		"command": "editor.action.clipboardCopyAction"
+	},
+	{
+		"key": "meta+v",
+		"command": "editor.action.clipboardPasteAction"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quit"
+	},
+	{
+		"key": "meta+down",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "meta+up",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "meta+r",
+		"command": "toggleFindRegex",
+		"when": "editorFocus"
+	},
+	{
+		"key": "meta+z",
+		"command": "editor.action.toggleWordWrap"
+	},
+]

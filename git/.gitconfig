@@ -1,0 +1,27 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = subl
+
+[user]
+	name = Dym Sohin
+	email = re@dym.sh
+
+[push]
+	default = matching
+
+[credential]
+	helper = cache --timeout 3600
+
+[diff]
+	tool = subl
+
+[difftool]
+	prompt = false
+
+[init]
+	defaultBranch = latest
+
+[pull]
+	rebase = true
+
+[safe]

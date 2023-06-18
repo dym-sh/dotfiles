@@ -1,0 +1,9 @@
+*~
+._*
+.DS_Store
+.Trash-1000
+package-lock.json
+config.*
+node_modules/
+.svn/
+target/

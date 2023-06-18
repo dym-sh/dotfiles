@@ -1,0 +1,7 @@
+title        "desktop-ubuntu"
+description  "ubuntu config files and scripts"
+media-type   "cli"
+tags         "config"  "scripts"
+license      "AGPL"
+homepage     "https://dym.sh/desktop-ubuntu"
+source       "https://source.garden/config/desktop-ubuntu"

@@ -1,0 +1,19 @@
+{
+"always_show_command_status": true,
+"diff_style": "side-by-side",
+"editor_path": "s",
+"font_size": 12,
+"hardware_acceleration": "opengl",
+"ignore_diff_white_space": true,
+"image_diff_style": "side-by-side",
+"render_commit_dialog_message_at_top": true,
+"side_bar_layout": "tabs",
+"tab_size": 2,
+/*"theme": "Merge Dark.sublime-theme",*/
+"time_format": "24h",
+"trim_trailing_white_space_on_save": true,
+"ui_scale" : 1,
+"scroll_speed": 10,
+	"theme": "Merge Dark.sublime-theme",
+	"update_check": false,
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="ipad store vert">
+    <Crop method="1" value_1="150" value_2="150" value_3="115" value_4="115"/>
+    <Automatic_crop method="0" position="3" color="#ffffff" tolerance="0" direction="15"/>
+    <Output folder="/Data/Img/ui" filename="{Filename}_ipad_vert" case="5" startIndex="1" format="PNG">
+        <Options overwrite="0" orgDate="false" keepMeta="false" keepICC="false" keepFolder="false" keepParentFolder="false" keepExtension="true" delOrg="true" multipage="false" allPages="false" openExplorer="false" beep="true" openBrowser="false" clearItems="false"/>
+        <PNG level="9" interlaced="false" filter="0"/>
+    </Output>
+</XnView_script>

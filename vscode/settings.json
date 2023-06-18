@@ -1,0 +1,128 @@
+{
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "other": "off",
+            "strings": "off"
+        },
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.wordWrap": "on"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "alignment.surroundSpace": {
+        "arrow": [
+            1,
+            1
+        ],
+        "assignment": [
+            1,
+            1
+        ],
+        "colon": [
+            1,
+            1
+        ],
+        "comment": 2
+    },
+    "cSpell.language": "en,de-de",
+    "cSpell.languageSettings": [],
+    "cSpell.userWords": [
+        "DSGVO",
+        "expowand",
+        "firstname",
+        "gdpr",
+        "immo",
+        "leadvalue",
+        "selfdisclosure",
+        "Selfdisclosure",
+        "termin",
+        "wiget",
+        "wigets"
+    ],
+    "css.format.enable": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoIndent": "keep",
+    "editor.autoSurround": "never",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorBlinking": "solid",
+    "editor.dragAndDrop": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.fontFamily": "DejaVu Sans Mono",
+    "editor.fontSize": 18,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": false,
+    "editor.lineHeight": 1.55,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderFinalNewline": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "git.enableSmartCommit": true,
+    "javascript.preferences.quoteStyle": "single",
+    "php.suggest.basic": false,
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/bin/php",
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "svelte.enable-ts-plugin": true,
+    "typescript.preferences.quoteStyle": "single",
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
+    "window.openFilesInNewWindow": "off",
+    "window.titleBarStyle": "custom",
+    "workbench.colorCustomizations": {
+        "[Monokai]": {
+            "activityBar.background": "#222",
+            "editor.background": "#222",
+            "editor.lineHighlightBackground": "#222",
+            "sideBar.background": "#222"
+        }
+    },
+    "workbench.colorTheme": "Monokai",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.reduceMotion": "on",
+    "workbench.startupEditor": "none",
+    "[sql]": {},
+    "[svg]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "files.associations": {
+        "*.tmpl": "html"
+    },
+}
