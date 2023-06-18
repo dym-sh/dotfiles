@@ -1,5 +1,5 @@
 title        "desktop-ubuntu"
-description  "ubuntu config files and scripts"
+description  "system settings, config files, and scripts"
 media-type   "cli"
 tags         "config"  "scripts"
 license      "AGPL"

@@ -1,3 +1,3 @@
-# dotfiles
+# desktop-ubuntu
 
-system settings and scripts
+system settings, config files, and scripts
