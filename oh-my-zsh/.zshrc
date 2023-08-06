@@ -44,6 +44,13 @@ alias x-='chmod -x'
 
 alias rmlint='rdfind -dryrun true'
 
+# keys
+# [Ctrl-Backspace] - delete whole backward-word
+bindkey -M emacs '^H' backward-kill-word
+bindkey -M viins '^H' backward-kill-word
+bindkey -M vicmd '^H' backward-kill-word
+
+
 # functions
 
 # split string=$2 using separator=$1
@@ -52,13 +59,17 @@ str_split() {
 }
 
 # display hex color
-c() {
+clr() {
   printf '\e]4;1;%s\a\e[0;41m      \n\e[m' "$1"
 }
 
-# bun completions
-[ -s "/home/dym/.bun/_bun" ] && source "/home/dym/.bun/_bun"
 
 # bun
+[ -s "/home/dym/.bun/_bun" ] && source "/home/dym/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+# deno
+export DENO_INSTALL="/home/dym/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"

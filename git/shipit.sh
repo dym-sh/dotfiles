@@ -10,9 +10,7 @@
 
 # add ssh keys
 eval `ssh-agent -s`
-ssh-add ~/.ssh/github-com
-ssh-add ~/.ssh/self-site_git
-# ssh-add ~/.ssh/source-garden_git
+ssh-add ~/.ssh/source-garden
 
 # create placeholder commit message if none provided
 COMMIT="$1"
@@ -22,5 +20,4 @@ COMMIT="$1"
 git commit -am "$COMMIT"
 
 # push all branches to every mirror
-git push --all github
-git push --all production
+git push --all

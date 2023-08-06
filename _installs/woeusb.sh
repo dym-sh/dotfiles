@@ -7,8 +7,6 @@ sudo apt install -y \
   python3-wxgtk4.0 \
   grub2-common \
   grub-pc-bin \
-  wimlib-imagex \
-  wimtools \
   build-essential
 
 
@@ -18,7 +16,9 @@ sudo add-apt-repository -y \
 
 sudo apt update -y
 sudo apt install -y \
-  woeusb
+  woeusb \
+  wimlib-imagex \
+  wimtools
 
 
 # get disk list
