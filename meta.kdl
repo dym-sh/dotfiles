@@ -1,0 +1,7 @@
+title        "browser-addons"
+description  "config files for addons of web-browsers"
+media-type   "json"
+tags         "config"  "firefox"
+license      "0BSD"
+homepage     "https://dym.sh/browser-addons/"
+source       "https://source.garden/config/browser-addons/"
