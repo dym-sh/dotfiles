@@ -1,19 +1,11 @@
-#!/bin/bash
-
+#!/bin/sh
 
 # latest git
 add-apt-repository -y \
   ppa:git-core/ppa
-apt-get update -y
-apt-get install -y \
-  git
 
-
-# upgrade
+# core apps and utils
 apt-get upgrade -y
-
-
-# all the tools
 apt-get install -y \
   build-essential \
   certbot \
@@ -22,6 +14,7 @@ apt-get install -y \
   ffmpeg \
   g++ \
   ghostscript \
+  git\
   graphicsmagick \
   imagemagick \
   jpegoptim \
@@ -33,7 +26,7 @@ apt-get install -y \
   pngquant \
   postgresql \
   postgresql-contrib \
-  rmlint \
+  rdfind \
   sshfs \
   ufw \
   wget \
@@ -58,29 +51,29 @@ pipupgrade -y --pip --ignore-error
 
 
 # nodejs
-rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* ~/.npm
-rm -rf /usr/local/lib/node*
-rm -rf /usr/local/bin/node*
-rm -rf /usr/local/include/node*
-apt-get purge nodejs npm
-apt autoremove
+rm -rf \
+  /usr/local/bin/node* \
+  /usr/local/bin/npm \
+  /usr/local/include/node* \
+  /usr/local/lib/node* \
+  /usr/local/share/man/man1/node* \
+  ~/.npm
 
-wget 'https://nodejs.org/dist/v16.15.0/node-v16.15.0-linux-x64.tar.xz'
-tar -xf 'node-v16.15.0-linux-x64.tar.xz'
-rm 'node-v16.15.0-linux-x64.tar.xz'
-mv node-v16.15.0-linux-x64/bin/* /usr/local/bin/
-mv node-v16.15.0-linux-x64/lib/node_modules/ /usr/local/lib/
+apt-get purge -y \
+  nodejs npm
+apt-get autoremove -y
 
-npm i -g n
-n lts
+VER='18.18.1'
+wget 'https://nodejs.org/dist/v$VER/node-v$VER-linux-x64.tar.xz'
+tar -xf 'node-v$VER-linux-x64.tar.xz'
+rm 'node-v$VER-linux-x64.tar.xz'
+mv node-v$VER-linux-x64/bin/* \
+  /usr/local/bin/
+mv node-v$VER-linux-x64/lib/node_modules/ \
+  /usr/local/lib/
+
 npm i -g npm
-
-npm i -g svgo
-
-
-# deno
-curl -fsSL https://deno.land/install.sh \
-  | sh
+npm i -g n svgo
 
 
 # rust
@@ -88,7 +81,9 @@ apt-get install -y \
   openssl libssl1.1 libssl-dev \
   libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' \
+  --tlsv1.2 -sSf 'https://sh.rustup.rs' \
+  | sh
 
 source $HOME/.cargo/env
 

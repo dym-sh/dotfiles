@@ -1,7 +1,10 @@
 #!/usr/bin/zsh
 
-sudo apt-get remove -y \
+apt-get remove -y \
   python3-cryptography
+
+apt-get install -y python3-pip
+
 
 pip3 install \
   certbot \
@@ -13,10 +16,8 @@ certbot certonly \
   -d '*.source.garden' \
   --email 'certbot+source.garden@dym.sh' \
   --agree-tos \
-  --manual-public-ip-logging-ok \
   --renew-by-default \
   --rsa-key-size 4096 \
-  --no-bootstrap \
   --manual \
   --preferred-challenges dns-01 \
   --server https://acme-v02.api.letsencrypt.org/directory
@@ -27,10 +28,8 @@ certbot certonly \
   -d '*.dym.sh' \
   --email 'certbot+dym.sh@dym.sh' \
   --agree-tos \
-  --manual-public-ip-logging-ok \
   --renew-by-default \
   --rsa-key-size 4096 \
-  --no-bootstrap \
   --manual \
   --preferred-challenges dns-01 \
   --server https://acme-v02.api.letsencrypt.org/directory

@@ -1,0 +1,7 @@
+title        "server-debian"
+description  "setup site, mail, git, etc"
+media-type   "cli"
+tags         "config"  "scripts"  "docs"
+license      "0BSD"
+homepage     "https://dym.sh/server-debian/"
+source       "https://source.garden/config/server-debian/"

@@ -27,4 +27,4 @@ killall gotosocial
 systemctl start gotosocial.service
 
 
-curl -L https://dym.sh/.well-known/webfinger\?resource\=acct:dym@dym.com
+curl -L 'https://dym.sh/.well-known/webfinger?resource=acct:dym@dym.sh'

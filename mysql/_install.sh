@@ -23,8 +23,8 @@ sudo killall -9 mysql_secure_installation
 sudo mysql -u root --skip-password
 
 ```
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'my very strong password !123';
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'my very strong password !123';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'STRONG_PASSWORD_ROOT';
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'STRONG_PASSWORD_ADMIN';
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;

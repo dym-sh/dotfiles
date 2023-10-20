@@ -2,31 +2,29 @@
 
 
 # optional: remove old installs
-sudo apt purge -y \
+apt purge -y \
   nodejs npm
-sudo apt autoremove -y
+apt autoremove -y
 
-sudo rm /usr/bin/node
-sudo rm /usr/bin/npm
-sudo rm -rf /usr/share/npm
-sudo rm -rf /usr/share/nodejs
+rm /usr/bin/node
+rm /usr/bin/npm
+rm -rf /usr/share/npm
+rm -rf /usr/share/nodejs
 
+VER='18.18.0'
 
-# install node + npm
-wget -O 'node.xz' \
-  'https://nodejs.org/dist/v18.16.0/node-v18.16.0-linux-x64.tar.xz'
-tar -xf 'node.xz'
-rm 'node.xz'
-sudo mv node-v18.16.0-linux-x64/bin/* /usr/local/bin/
-sudo mv node-v18.16.0-linux-x64/lib/node_modules/ /usr/local/lib/
+mv node-v$VER-linux-x64/bin/* \
+   /usr/local/bin/
+mv node-v$VER-linux-x64/lib/node_modules/ \
+   /usr/local/lib/
 
-sudo mkdir -p  \
+mkdir -p  \
   '/usr/lib/nodejs' \
   '/usr/lib/node_modules'
 
 
 # fix permissions
-sudo chown -R $USER:$USER \
+chown -R $USER:$USER \
   '/usr/local' \
   '/usr/share' \
   '/usr/lib/nodejs' \

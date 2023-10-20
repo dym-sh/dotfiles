@@ -1,0 +1,22 @@
+Include /etc/ssh/sshd_config.d/*.conf
+
+Port 22
+Port 567
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+Banner none
+AcceptEnv LANG LC_*
+Subsystem  sftp  /usr/lib/openssh/sftp-server
+PermitRootLogin yes
+HostKeyAlgorithms +ssh-rsa
+
+Match LocalPort 22
+  DenyUsers root
+
+Match LocalPort 567
+  DenyUsers git

@@ -6,8 +6,8 @@ pkill sendmail
 
 # stop and remove old container
 docker stop mailserver
-docker rm `docker ps -a -q`
-docker container rm -f `docker ps -a -q`
+docker rm mailserver
+docker container rm -f mailserver
 docker container prune
 # update container
 docker pull analogic/poste.io
@@ -17,14 +17,14 @@ docker run \
   --detach \
   --restart always \
   --name 'mailserver' \
-  --hostname 'mx.dym.sh' \
+  --hostname 'mail.dym.sh' \
   --publish 25:25 \
   --publish 143:143 \
   --publish 587:587 \
   --publish 993:993 \
   --publish 4190:4190 \
-  --publish 12080:80 \
-  --publish 12443:443 \
+  --publish 11080:80 \
+  --publish 11443:443 \
   --volume /etc/localtime:/etc/localtime:ro \
   --volume /var/mail/data:/data \
   --tty analogic/poste.io
