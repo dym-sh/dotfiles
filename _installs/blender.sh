@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 sudo add-apt-repository -y \
   ppa:savoury1/ffmpeg4 \
@@ -6,7 +6,7 @@ sudo add-apt-repository -y \
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
+# sudo apt-get dist-upgrade -y
 
 sudo apt-get install -y \
   ffmpeg blender

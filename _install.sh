@@ -45,9 +45,13 @@ sudo apt install -y \
   gnumeric \
   xdotool
 
+
 sudo systemctl disable rsyslog
 sudo systemctl stop rsyslog
 
 sudo timedatectl set-timezone Europe/Berlin
 
-
+sudo visudo
+## or sudo nano /etc/sudoers
+## add the line
+# Defaults        timestamp_timeout=-1

@@ -12,13 +12,17 @@ sudo add-apt-repository -y \
 
 sudo apt upgrade -y
 sudo apt install -y \
-  vulkan-tools
+  vulkan-tools \
+  nvidia-driver-390
+
+sudo apt-mark hold 'nvidia-*'
+
 
 sudo nvidia-xconfig \
   -a --cool-bits=28 \
   --allow-empty-initial-configuration
 
-sudo apt-mark hold 'nvidia-*'
+nvidia-smi -q -d TEMPERATURE
 
 
 # ffmpeg for nvidia

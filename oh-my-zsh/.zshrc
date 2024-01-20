@@ -37,7 +37,7 @@ alias d='du -ch --max-depth=1'
 alias i='sudo apt-get install -y'
 alias un='sudo apt-get remove -y'
 
-alias subs='youtube-dl --write-auto-sub --sub-lang en'
+alias subs='yt-dlp --write-auto-sub --sub-lang en'
 
 alias x+='chmod +x'
 alias x-='chmod -x'
@@ -73,3 +73,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # deno
 export DENO_INSTALL="/home/dym/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+

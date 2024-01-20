@@ -1,0 +1,24 @@
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+
+UUID=0b394fec-0396-4593-bdee-9e022566be32 /               ext4    errors=remount-ro 0       1
+
+UUID=C196-824A  /boot/efi       vfat    umask=0077      0       1
+
+/swapfile                                 none            swap    sw              0       0
+
+192.168.0.222:/nfs/Public                    /Data            nfs     auto               0       0
+
+UUID=0310747e-ae8c-459b-913f-b7f190835785  /Servers/self        ext4    defaults           0       0
+
+/Servers/self/My		/My             none    bind
+/Servers/self/Work		/Work           none    bind
+
+/Servers/self/_			/_              none    bind
+/Servers/self/Books		/Books          none    bind
+/Servers/self/Code		/Code           none    bind
+/Servers/self/Fonts		/Fonts          none    bind
+/Servers/self/Forks		/Forks          none    bind
+/Servers/self/Img		/Img		none    bind
+/Servers/self/Music		/Music          none    bind
+/Servers/self/Templates		/Templates      none    bind
+/Servers/self/Ui		/Ui             none    bind

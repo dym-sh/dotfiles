@@ -1,9 +1,0 @@
-# <file system>                           <mount point>    <type>  <options>          <dump>  <pass>
-UUID=744cdea3-25f4-4ecc-8238-ad9c9be377af /                ext4    errors=remount-ro  0       1
-UUID=1A9E-C4E6                            /boot/efi        vfat    umask=0077         0       1
-/swapfile                                 none             swap    sw                 0       0
-192.168.0.5:/nfs/Public                   /Data            nfs     auto               0       0
-UUID=c6222983-f9e5-456d-abcf-f80dc451ec95 /mnt/self-files  btrfs   defaults           0       0
-
-/mnt/self-files/My                        /My              none    bind
-/mnt/self-files/Work                      /Work            none    bind

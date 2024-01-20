@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="1.0.5 beta" ConfigVersion="12">
+<doublecmd DCVersion="0.9.8 beta" ConfigVersion="10">
   <Configuration Save="True" SortOrder="1" TreeType="0">
     <UseConfigInProgramDir>False</UseConfigInProgramDir>
     <FolderTabs Save="True"/>
@@ -129,7 +129,7 @@
       <WcxPlugin Enabled="True">
         <ArchiveExt>rar</ArchiveExt>
         <Path>%commander_path%/plugins/wcx/unrar/unrar.wcx</Path>
-        <Flags>607</Flags>
+        <Flags>68</Flags>
       </WcxPlugin>
       <WcxPlugin Enabled="True">
         <ArchiveExt>jar</ArchiveExt>
@@ -328,7 +328,6 @@
   </Language>
   <Behaviours>
     <GoToRoot>False</GoToRoot>
-    <ShowCurDirTitleBar>False</ShowCurDirTitleBar>
     <ActiveRight>False</ActiveRight>
     <RunInTerminalStayOpenCmd>xterm</RunInTerminalStayOpenCmd>
     <RunInTerminalStayOpenParams>-e sh -c '{command}; echo -n Press ENTER to exit... ; read a'</RunInTerminalStayOpenParams>
@@ -340,11 +339,9 @@
     <LynxLike>False</LynxLike>
     <FileSizeFormat>0</FileSizeFormat>
     <OperationSizeFormat>0</OperationSizeFormat>
-    <HeaderSizeFormat>0</HeaderSizeFormat>
-    <FooterSizeFormat>0</FooterSizeFormat>
+    <HeaderFooterSizeFormat>0</HeaderFooterSizeFormat>
     <FileSizeDigits>1</FileSizeDigits>
-    <HeaderDigits>1</HeaderDigits>
-    <FooterDigits>1</FooterDigits>
+    <HeaderFooterDigits>1</HeaderFooterDigits>
     <OperationSizeDigits>1</OperationSizeDigits>
     <PersonalizedByte>B</PersonalizedByte>
     <PersonalizedKilo>KB</PersonalizedKilo>
@@ -385,7 +382,7 @@
       <KeepTerminalOpen>False</KeepTerminalOpen>
     </Viewer>
     <Editor Enabled="True">
-      <Path>code</Path>
+      <Path>/usr/bin/subl</Path>
       <Parameters/>
       <RunInTerminal>False</RunInTerminal>
       <KeepTerminalOpen>False</KeepTerminalOpen>
@@ -484,19 +481,8 @@
       <FlatIcons>True</FlatIcons>
       <ButtonHeight>24</ButtonHeight>
       <IconSize>16</IconSize>
-      <ShowCaptions>False</ShowCaptions>
       <ReportErrorWithCommands>False</ReportErrorWithCommands>
-      <FilenameStyle>0</FilenameStyle>
-      <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
-      <PathModifierElements>0</PathModifierElements>
     </ButtonBar>
-    <MiddleBar Enabled="False">
-      <FlatIcons>True</FlatIcons>
-      <ButtonHeight>24</ButtonHeight>
-      <IconSize>16</IconSize>
-      <ShowCaptions>False</ShowCaptions>
-      <ReportErrorWithCommands>False</ReportErrorWithCommands>
-    </MiddleBar>
     <DriveBar1>False</DriveBar1>
     <DriveBar2>True</DriveBar2>
     <DriveBarFlat>True</DriveBarFlat>
@@ -521,8 +507,6 @@
     <PanelOfOperationsInBackground>True</PanelOfOperationsInBackground>
     <HorizontalFilePanels>False</HorizontalFilePanels>
     <ShortFormatDriveInfo>False</ShortFormatDriveInfo>
-    <UppercaseDriveLetter>False</UppercaseDriveLetter>
-    <ShowColonAfterDrive>False</ShowColonAfterDrive>
   </Layout>
   <FilesViews>
     <Sorting>
@@ -628,7 +612,7 @@
     <ActionOnDoubleClick>2</ActionOnDoubleClick>
     <OpenedTabs>
       <Left>
-        <ActiveTab>1</ActiveTab>
+        <ActiveTab>4</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -725,9 +709,30 @@
           <LockPath>/usr/share/applications/</LockPath>
           <Title>applications</Title>
         </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/Cfg/doublecmd/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
       </Left>
       <Right>
-        <ActiveTab>2</ActiveTab>
+        <ActiveTab>6</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -823,6 +828,72 @@
           <Options>3</Options>
           <LockPath>/Work/</LockPath>
           <Title>Work</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/home/dym/Inbox/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>3</Options>
+          <LockPath>/home/dym/Inbox/</LockPath>
+          <Title>Inbox</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/My/config/desktop-ubuntu-24/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>13</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/home/dym/.config/doublecmd/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
         </Tab>
       </Right>
     </OpenedTabs>
@@ -991,7 +1062,7 @@
         <Column>
           <Title>Name</Title>
           <FuncString>[DC().GETFILENAME{}] </FuncString>
-          <Width>1118</Width>
+          <Width>1119</Width>
           <Align>0</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1037,7 +1108,7 @@
         <Column>
           <Title>Ext</Title>
           <FuncString>[DC().GETFILETYPE{}] </FuncString>
-          <Width>271</Width>
+          <Width>272</Width>
           <Align>1</Align>
           <Font>
             <Name>DejaVu Sans Mono</Name>
@@ -1085,38 +1156,18 @@
   </ColumnsSets>
   <MainWindow>
     <Position Save="True">
-      <Left>1920</Left>
+      <Left>0</Left>
       <Top>0</Top>
-      <Width>3840</Width>
-      <Height>2160</Height>
-      <Maximized>False</Maximized>
+      <Width>1916</Width>
+      <Height>1025</Height>
+      <Maximized>True</Maximized>
       <Splitter>50</Splitter>
-      <PixelsPerInch>150</PixelsPerInch>
+      <PixelsPerInch>96</PixelsPerInch>
     </Position>
   </MainWindow>
   <MultiRenamePresets>
-    <LastPreset>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</LastPreset>
-    <Presets>
-      <Preset>
-        <Name>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</Name>
-        <Filename>[N]</Filename>
-        <Extension>html</Extension>
-        <FilenameStyle>0</FilenameStyle>
-        <ExtensionStyle>0</ExtensionStyle>
-        <Find/>
-        <Replace>-</Replace>
-        <RegExp>True</RegExp>
-        <UseSubs>False</UseSubs>
-        <Counter>1</Counter>
-        <Interval>1</Interval>
-        <Width>0</Width>
-        <Log>
-          <Enabled>False</Enabled>
-          <Append>False</Append>
-          <File/>
-        </Log>
-      </Preset>
-    </Presets>
+    <LastPreset/>
+    <Presets/>
   </MultiRenamePresets>
   <Description>
     <CreateNewUnicode>True</CreateNewUnicode>

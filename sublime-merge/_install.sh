@@ -32,10 +32,7 @@ ln  -s  '/opt/sublime_merge/sublime_merge'  "$BIN/sublime_merge"
 # link configs
 mkdir -p  ~/.config/sublime-merge/Packages/
 
-mv  ~/.config/sublime-merge/Packages/User \
-  ~/.config/sublime-merge/Packages/User_bak
-
 cd /Cfg/sublime-merge/
 
-ln  -s  `pwd` \
-  ~/.config/sublime-merge/Packages/User
+ln  -s  `pwd`/* \
+  ~/.config/sublime-merge/Packages/User/

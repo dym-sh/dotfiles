@@ -1,21 +1,31 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 
 DIRS=(
-  '/_'
-  '/Apps'
-  '/Cfg'
-  '/Data'
-  '/My'
-  '/Work'
+  /_
+  /Apps
+  /Books
+  /Cfg
+  /Code
+  /Fonts
+  /Forks
+  /Servers
+  /Data
+  /Img
+  /Music
+  /My
+  /Work
+  /Ui
 )
 
 # create dirs
-sudo mkdir -m 755  $DIRS
-sudo chown -R "$USER:$USER"  $DIRS
-sudo chmod g+s -R  $DIRS
+for DIR in $DIRS; do
+  sudo mkdir -m 755  $DIR
+  sudo chown -R "$USER:$USER"  $DIR
+  sudo chmod g+s -R  $DIR
+done
 
-mkdir -m 700 \
-  '/home/dym/.privat'
+# mkdir -m 700 \
+#  /home/dym/.privat
 
 
 # uuids for fstab

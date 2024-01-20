@@ -15,3 +15,11 @@ sudo chsh -s `which zsh`
 cd /Cfg/oh-my-zsh/
 ln  -s  `pwd`/.[a-zA-Z]*  ~/  --force
 
+
+git clone --depth 1 \
+  'https://github.com/chisui/zsh-nix-shell.git' \
+  "$ZSH_CUSTOM/plugins/nix-shell"
+
+# maybe add to .zshrc
+# ZSH_CUSTOM=$HOME/.config/oh-my-zsh
+

@@ -24,12 +24,8 @@ ln  -s  '/opt/sublime_text/sublime_text'  "$BIN/s"
 
 
 # link configs
-mkdir -p  ~/.config/sublime-text/Packages/
-
-mv  ~/.config/sublime-text/Packages/User \
-  ~/.config/sublime-text/Packages/User_bak
-
+mkdir -p  ~/.config/sublime-text/Packages/User/
 cd /Cfg/sublime-text/
-
-ln  -s  `pwd` \
-  ~/.config/sublime-text/Packages/User
+ln  -s  `pwd`/[a-zA-Z0-9]* \
+  ~/.config/sublime-text/Packages/User/ \
+  --force

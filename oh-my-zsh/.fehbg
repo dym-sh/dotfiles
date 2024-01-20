@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/Img/2023/12/blob-on-green_20231223212830.png'

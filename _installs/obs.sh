@@ -7,8 +7,9 @@ sudo add-apt-repository -y \
 
 
 # install OBS and additional tooling
-sudo apt update -y
-sudo apt install -y \
+sudo apt-get update -y
+sudo apt-get install -y \
   obs-studio \
-  ffmpeg \
   v4l2loopback-dkms
+#  ffmpeg \
+

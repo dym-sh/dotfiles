@@ -12,13 +12,15 @@ sudo rm -rf /usr/share/npm
 sudo rm -rf /usr/share/nodejs
 
 
+VER='v20.9.0'
+
 # install node + npm
 wget -O 'node.xz' \
-  'https://nodejs.org/dist/v18.16.0/node-v18.16.0-linux-x64.tar.xz'
+  "https://nodejs.org/dist/$VER/node-$VER-linux-x64.tar.xz"
 tar -xf 'node.xz'
-rm 'node.xz'
-sudo mv node-v18.16.0-linux-x64/bin/* /usr/local/bin/
-sudo mv node-v18.16.0-linux-x64/lib/node_modules/ /usr/local/lib/
+# rm 'node.xz'
+sudo mv node-$VER-linux-x64/bin/* /usr/local/bin/
+sudo mv node-$VER-linux-x64/lib/node_modules/ /usr/local/lib/
 
 sudo mkdir -p  \
   '/usr/lib/nodejs' \

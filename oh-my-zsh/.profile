@@ -22,4 +22,4 @@ export XDG_CONFIG_HOME="/home/dym/.config"
 
 . "$HOME/.cargo/env"
 
-eval `ssh-agent -s`
+if [ -e /home/dym/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dym/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

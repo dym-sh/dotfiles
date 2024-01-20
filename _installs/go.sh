@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 
 # install go
@@ -10,3 +10,4 @@ tar -C '/Apps/go--app' -xzf 'go1.19.4.linux-amd64.tar.gz'
 rm 'go1.19.4.linux-amd64.tar.gz'
 sudo chown $USER:$USER -R '/usr/local/go'
 sudo ln -s /usr/local/go/bin/* /Apps/ --force
+
