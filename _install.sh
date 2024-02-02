@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 
 # remove unneeded
@@ -20,7 +20,7 @@ sudo apt upgrade -y
 sudo apt install -y \
   zsh curl wget git \
   g++ make clang build-essential \
-  nano ffmpeg lynx \
+  nano ffmpeg lynx feh \
   imagemagick graphicsmagick ghostscript \
   jpegoptim pngcrush pngquant \
   usrmerge net-tools rdfind ripgrep

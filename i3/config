@@ -92,7 +92,7 @@ bindsym  XF86AudioPrev  exec  playerctl previous
 
 # workspaces (numbers row)
 set  $w__1  "100: web"
-bindsym  $Meta+1  workspace $w__1;  exec [ $(ps -A | grep vivaldi | wc -l) = 0 ] && $(which vivaldi) -s
+bindsym  $Meta+1  workspace $w__1;  exec [ $(wmctrl -l | grep 'Mozilla Firefox' | wc -l) = 0 ] && $(which firefox)
 
 set  $w__2  "200: files"
 bindsym  $Meta+2  workspace $w__2;  exec [ $(ps -A | grep doublecmd | wc -l) = 0 ] && $(which doublecmd)
@@ -153,7 +153,7 @@ assign [class="sublime_merge"] $w__KP_5
 for_window [class="sublime_merge$"] move container to workspace $w__KP_5
 
 set  $w__KP_6 "KP_6: webb"
-bindsym  $Meta+KP_6  workspace $w__KP_6;  exec [ $(wmctrl -l | grep 'Mozilla Firefox' | wc -l) = 0 ] && $(which firefox)
+bindsym  $Meta+KP_6  workspace $w__KP_6;  exec [ $(ps -A | grep vivaldi | wc -l) = 0 ] && $(which vivaldi) -s
 
 set  $w__KP_7 "KP_7: design"
 bindsym  $Meta+KP_7  workspace $w__KP_7;  exec [ $(xdotool search -class 'penpot' | wc -l) = 0 ] && penpot
@@ -178,7 +178,7 @@ bindsym  $Meta+$Alt+KP_9  move container to workspace $w__KP_9
 
 
 # keyboard layouts
-bindsym  $Meta+F9  exec --no-startup-id  "/Cfg/kb/jp-translit-hiro.sh"
+bindsym  $Meta+F9  exec --no-startup-id   "/Cfg/kb/jp-translit-hiro.sh"
 bindsym  $Meta+F10  exec --no-startup-id  "/Cfg/kb/jp-translit-kana.sh"
 bindsym  $Meta+F11  exec --no-startup-id  "/Cfg/kb/ru-translit-mac.sh"
 bindsym  $Meta+F12  exec --no-startup-id  "/Cfg/kb/us-mac.sh"
