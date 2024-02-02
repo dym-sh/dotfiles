@@ -16,6 +16,16 @@ sudo apt-get install -y \
   gnupg \
   lsb-release
 
+# "security"
+sudo apt-key adv --keyserver keyserver.ubuntu.com \
+  --recv-keys 7FCC7D46ACCC4CF8
+sudo apt-key adv --keyserver keyserver.ubuntu.com \
+  --recv-keys 7EA0A9C3F273FCD8
+sudo apt-key adv --keyserver keyserver.ubuntu.com \
+  --recv-keys 40976EAF437D05B5
+sudo apt-key adv --keyserver keyserver.ubuntu.com \
+  --recv-keys 3B4FE6ACC0B21F32
+
 
 # docker.com key file
 curl -fsSL 'https://download.docker.com/linux/ubuntu/gpg' \
@@ -43,15 +53,15 @@ $DISTRO stable \
 
 
 # update sources
-sudo apt update -y
+sudo apt-get update -y
 
 # check avaliable versions
-apt-cache \
-  madison docker-ce
+sudo apt-cache \
+  madison docker
 
 # install docker
-sudo apt install -y \
-  docker-ce docker-ce-cli containerd.io docker-compose
+sudo apt-get install -y \
+  docker docker-compose
 
 
 # manage rootless
@@ -65,8 +75,6 @@ docker run hello-world
 curl https://desktop-stage.docker.com/linux/main/amd64/77103/docker-desktop.deb --output docker-desktop.deb
 sudo apt install ./docker-desktop.deb
 systemctl --user start docker-desktop
-
-
 
 
 # image of OSX
