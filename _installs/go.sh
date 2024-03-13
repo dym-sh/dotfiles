@@ -1,13 +1,19 @@
 #!/bin/sh
-
-
 # install go
 
-wget -c 'https://go.dev/dl/go1.19.4.linux-amd64.tar.gz'
+VER='1.22.1'
 
-sudo rm -rf '/Apps/go--app/*'
-tar -C '/Apps/go--app' -xzf 'go1.19.4.linux-amd64.tar.gz'
-rm 'go1.19.4.linux-amd64.tar.gz'
-sudo chown $USER:$USER -R '/usr/local/go'
-sudo ln -s /usr/local/go/bin/* /Apps/ --force
+wget -c "https://go.dev/dl/go$VER.linux-amd64.tar.gz"
 
+rm -rf /Apps/go--app
+mkdir -p /Apps/go--app
+
+tar -xzf "go$VER.linux-amd64.tar.gz" \
+	  -C "/Apps/go--app"
+
+mv /Apps/go--app/go/* '/Apps/go--app/'
+chown $USER:$USER -R "/Apps/go--app"
+ln -s /Apps/go--app/bin/* /Apps/ --force
+
+rm "go$VER.linux-amd64.tar.gz"
+rm -rf /Apps/go--app/go

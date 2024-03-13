@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 
 # install via npm
@@ -14,7 +14,6 @@ npm i --save-dev \
 
 # base
 sudo apt update -y
-sudo apt update
 sudo apt install -y \
     build-essential \
     curl \

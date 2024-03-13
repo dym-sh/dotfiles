@@ -16,10 +16,10 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export TERMINAL=`which alacritty`
 export EDITOR=`which sublime_text`
 
-export PATH="/Apps:/usr/sbin:/usr/bin:/home/dym/.local/bin:/usr/bin:/usr/local/bin:/Data/Apps_and/platform-tools:$PATH"
+export PATH="/home/dym/.nix-profile/bin:/Apps:/usr/sbin:/usr/bin:/home/dym/.local/bin:/usr/bin:/usr/local/bin:/Data/Apps_and/platform-tools:/usr/local/sbin:/usr/local/bin"
 
 export XDG_CONFIG_HOME="/home/dym/.config"
 
-. "$HOME/.cargo/env"
-
-if [ -e /home/dym/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dym/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e /home/dym/.nix-profile/etc/profile.d/nix.sh ]; then
+	. /home/dym/.nix-profile/etc/profile.d/nix.sh
+fi # added by Nix installer

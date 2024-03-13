@@ -33,6 +33,7 @@ alias md='mkdir'
 alias ll='l -T'
 alias ls='ls -alhgAF --group-directories-first'
 alias d='du -ch --max-depth=1'
+alias gm='/usr/bin/gm'
 
 alias i='sudo apt-get install -y'
 alias un='sudo apt-get remove -y'
@@ -74,3 +75,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export DENO_INSTALL="/home/dym/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+
+if [ -e /home/dym/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dym/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

@@ -44,4 +44,6 @@ env LIBSSH2_SYS_USE_PKG_CONFIG='' \
 cargo install \
   xh bat exa fd-find \
   broot jql sd \
-  xargo
+  xargo \
+  cargo-cache \
+  gitui

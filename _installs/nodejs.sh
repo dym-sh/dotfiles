@@ -12,7 +12,7 @@ sudo rm -rf /usr/share/npm
 sudo rm -rf /usr/share/nodejs
 
 
-VER='v20.9.0'
+VER='v20.11.1'
 
 # install node + npm
 wget -O 'node.xz' \

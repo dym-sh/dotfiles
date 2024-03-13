@@ -23,13 +23,9 @@ sudo apt install -y \
   nano ffmpeg lynx feh \
   imagemagick graphicsmagick ghostscript \
   jpegoptim pngcrush pngquant \
-  usrmerge net-tools rdfind ripgrep
+  usrmerge net-tools rdfind ripgrep \
+  sshfs sqlite3 archivemount
   # fonts-font-awesome \
-
-
-# desktop
-sudo apt install -y \
-  numlockx sshfs
 
 
 # GUI Apps
@@ -43,7 +39,8 @@ sudo apt install -y \
   kcharselect \
   kid3 \
   gnumeric \
-  xdotool
+  xdotool \
+  numlockx
 
 
 sudo systemctl disable rsyslog
