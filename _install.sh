@@ -29,6 +29,7 @@ apt-get install -y \
   rdfind \
   sshfs \
   ufw \
+  unzip \
   wget \
   zsh
 

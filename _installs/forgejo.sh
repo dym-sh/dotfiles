@@ -3,15 +3,13 @@
 apt-get install -y \
   git git-lfs
 
-VER='1.20.4-1'
+VER='1.21.5-0'
 
 wget  "https://codeberg.org/forgejo/forgejo/releases/download/v$VER/forgejo-$VER-linux-amd64.xz"
 xz -d  "forgejo-$VER-linux-amd64.xz"
 
 gpg --keyserver keys.openpgp.org \
     --recv EB114F5E6C0DC2BCDD183550A4B61A2DC5923710
-wget  "https://codeberg.org/forgejo/forgejo/releases/download/v$VER/forgejo-$VER-linux-amd64.asc"
-gpg --verify  "forgejo-$VER-linux-amd64.asc forgejo-$VER-linux-amd64"
 
 chmod +x  "forgejo-$VER-linux-amd64"
 mv  "forgejo-$VER-linux-amd64" \
@@ -51,9 +49,10 @@ chown root:git -R /etc/forgejo \
 chown root:git /usr/local/bin/custom/conf/app.ini \
   && chmod 770 /usr/local/bin/custom/conf/app.ini
 
+chown -R git:git  /usr/local/bin/data/indexers/issues.bleve
 
 # test with `su - git -c 'forgejo'`
-
+# deploy with `nohup forgejo >/dev/null 2>&1 &`
 
 wget -O \
   /etc/systemd/system/forgejo.service \
