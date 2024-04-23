@@ -26,6 +26,10 @@ mkdir -p  /home/git
 chown git:git -R /home/git \
   && chmod -R 750 /home/git
 
+mkdir /usr/local/bin/data/forgejo-repositories
+chown git:git -R /usr/local/bin/data/forgejo-repositories \
+  && chmod -R 770 /usr/local/bin/data/forgejo-repositories
+
 mkdir /var/lib/forgejo
 chown git:git -R /var/lib/forgejo \
   && chmod -R 750 /var/lib/forgejo
