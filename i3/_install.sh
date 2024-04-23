@@ -10,7 +10,7 @@ mv ~/.config/i3/config \
    ~/.config/i3/config_`date '+%Y-%m-%d@%H-%M'`.bak
 
 # link new config
-mkdir -p ~/.config/i3/
+mkdir -p ~/.config/i3
 cd /Cfg/i3/
 ln -s `pwd`/config \
    ~/.config/i3/

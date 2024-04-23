@@ -15,7 +15,7 @@ sudo ln -s `which python3.11` \
   /usr/bin/python3 \
   --force
 
-curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3.11
+curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3
 
 python --version
 pip --version

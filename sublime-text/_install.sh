@@ -4,8 +4,9 @@
 # install sublime-text
 wget -qO - \
   'https://download.sublimetext.com/sublimehq-pub.gpg' \
-  | sudo apt-key add -
-  
+  | gpg --dearmor \
+  | sudo tee /etc/apt/trusted.gpg.d/sublime.gpg
+
 sudo apt install -y \
   apt-transport-https
 

@@ -16,6 +16,5 @@ cargo install alacritty
 mkdir -p ~/.config/alacritty/
 cd /Cfg/alacritty/
 
-ln -s `pwd`/alacritty.yml \
-   ~/.config/alacritty/alacritty.yml --force
-
+ln -s `pwd`/alacritty.* \
+   ~/.config/alacritty/ --force

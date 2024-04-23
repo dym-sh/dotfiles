@@ -4,8 +4,9 @@
 # remove unneeded
 sudo apt-get purge -y \
   celluloid hypnotix hexchat \
-  onboard pix gnote drawing xviewer \
+  onboard pix gnote xviewer \
   redshift warpinator orca
+# drawing
 
 # remove default wallpapers
 sudo rm -rf \
@@ -24,7 +25,8 @@ sudo apt install -y \
   imagemagick graphicsmagick ghostscript \
   jpegoptim pngcrush pngquant \
   usrmerge net-tools rdfind ripgrep \
-  sshfs sqlite3 archivemount
+  sqlite3 exa \
+  nfs-common sshfs archivemount
   # fonts-font-awesome \
 
 
@@ -40,7 +42,10 @@ sudo apt install -y \
   kid3 \
   gnumeric \
   xdotool \
-  numlockx
+  numlockx \
+  copyq \
+  imwheel
+
 
 
 sudo systemctl disable rsyslog

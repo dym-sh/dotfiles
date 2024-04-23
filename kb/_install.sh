@@ -1,5 +1,5 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 
 cd /Cfg/kb/
-ln  -s  `pwd`/.[a-zA-Z]*  ~/  --force
+ln  -s  `pwd`/.[a-zA-Z0-9]*  ~/  --force

@@ -2,6 +2,8 @@
 
 # ~/.xsession  >/dev/null 2>&1 &
 
+/Cfg/kb/us-mac.sh >/dev/null 2>&1 &
+
 imwheel    >/dev/null 2>&1 &
 nfancurve  >/dev/null 2>&1 &
 copyq      >/dev/null 2>&1 &

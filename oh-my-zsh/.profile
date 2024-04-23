@@ -16,10 +16,13 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export TERMINAL=`which alacritty`
 export EDITOR=`which sublime_text`
 
-export PATH="/home/dym/.nix-profile/bin:/Apps:/usr/sbin:/usr/bin:/home/dym/.local/bin:/usr/bin:/usr/local/bin:/Data/Apps_and/platform-tools:/usr/local/sbin:/usr/local/bin"
+export PATH="/Apps:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"
+# /Data/Apps_and/platform-tools:
 
 export XDG_CONFIG_HOME="/home/dym/.config"
 
-if [ -e /home/dym/.nix-profile/etc/profile.d/nix.sh ]; then
-	. /home/dym/.nix-profile/etc/profile.d/nix.sh
-fi # added by Nix installer
+. /home/dym/.nix-profile/etc/profile.d/nix.sh
+export DENO_INSTALL="$HOME/.deno"
+
+# arr_paths=(${(@s/:/)PATH})
+# export PATH=`echo $arr_paths | tr ' ' '\n' | uniq | tr '\n' ':'`

@@ -45,5 +45,4 @@ cargo install \
   xh bat exa fd-find \
   broot jql sd \
   xargo \
-  cargo-cache \
-  gitui
+  cargo-cache

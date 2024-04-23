@@ -14,7 +14,6 @@ rm 'XnViewMP-linux-x64.deb'
 
 # link config
 mkdir -p ~/.config/xnviewmp/
-cd /Cfg/xnview/
+cd /Cfg/xnviewmp/
 
 ln -s `pwd`/xnview.ini ~/.config/xnviewmp/ --force
-

@@ -27,13 +27,15 @@ PROMPT='$fg[red]%n$reset_color@$fg[blue]%m$reset_color [`date "+%Y-%m-%d %a %H:%
 
 
 # aliases
+unalias gm # norm='/usr/bin/gm'
+unalias gl # dont need to git-pull that much
+
 alias bc='bc -l'
-alias l='exa -alhg --git --group-directories-first --color-scale -s ext'
+alias l='exa -alhg --group-directories-first --color-scale -s ext'
 alias md='mkdir'
 alias ll='l -T'
 alias ls='ls -alhgAF --group-directories-first'
 alias d='du -ch --max-depth=1'
-alias gm='/usr/bin/gm'
 
 alias i='sudo apt-get install -y'
 alias un='sudo apt-get remove -y'
@@ -64,16 +66,7 @@ clr() {
   printf '\e]4;1;%s\a\e[0;41m      \n\e[m' "$1"
 }
 
-
-# bun
+# bun completions
 [ -s "/home/dym/.bun/_bun" ] && source "/home/dym/.bun/_bun"
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-
-# deno
-export DENO_INSTALL="/home/dym/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
 
 if [ -e /home/dym/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dym/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

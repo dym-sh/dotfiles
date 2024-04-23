@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 sudo apt install -y \
   mysql-server
@@ -13,7 +13,8 @@ systemctl status mysql.service
 
 sudo ln -s \
   '/Cfg/mysql/my.cnf' \
-  '/etc/mysql/my.cnf' --force
+  '/etc/mysql/my.cnf' \
+  --force
 
 sudo chown mysql:mysql /etc/mysql/my.cnf
 sudo chmod 0640 /etc/mysql/my.cnf

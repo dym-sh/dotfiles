@@ -8,3 +8,5 @@ sudo add-apt-repository -y \
 sudo apt update -y
 sudo apt install -y \
   grub-customizer
+
+sudo grub-customizer
