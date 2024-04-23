@@ -1,0 +1,40 @@
+[colors.primary]
+background = "0x000000"
+foreground = "0x00ff00"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "monospace"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 4
+
+[font.italic]
+family = "monospace"
+style = "Italic"
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 4
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Super"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Super"
+
+[window.padding]
+x = 18
+y = 10
