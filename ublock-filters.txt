@@ -1,19 +1,15 @@
+##.spaceball
 ##.fancybox-spaceball
 ##[class^='onetrust-']
 ##[class^=fbc-badge]
-||styles.redditmedia.com/t5_2t0no/styles/bannerBackgroundImage_ediz3eckp6441.png?width=4000&s=6f85eab69bef7aa5e1a15ee46d8215734eb0d092$image
 imdb.com##[data-testid="media-viewer__touch-handler"]
-tiktok.com
 www.imdb.com##[data-testid="media-viewer__touch-handler"]
 www.instagram.com##._4bSq7
 www.instagram.com##._9AhH0
-www.instagram.com##.GZkEI.ccgHY.NP414
-www.tiktok.com
-youtube.com##.ytp-ce-element
 www.instagram.com##._aagw
+www.instagram.com##._aagv+._aagw
+www.instagram.com##.GZkEI.ccgHY.NP414
 ||api.producthunt.com/widgets/$image
 ||zip^
-youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
-youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
-youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
-youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+https://accounts.google.com/gsi/iframe/
+###credential_picker_container

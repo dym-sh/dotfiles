@@ -1,0 +1,8 @@
+tab[muted] .tab-icon-overlay,
+tab:not([muted]) .tab-icon-overlay {
+  display: none !important;
+}
+tab[muted] .tab-icon-image {
+  opacity: 1 !important;
+}
+

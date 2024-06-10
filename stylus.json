@@ -1,0 +1,214 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "newStyleAsUsercss": false,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "urlInstaller": true,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "u",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": false,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 2,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": 0,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false,
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1713959548459,
+    "name": "behance-img-rightclick",
+    "sections": [
+      {
+        "code": "/* ==UserStyle==\n@name        behance-img-rightclick\n@description allow rightclick on image elements on behance.net\n@version     2024.01.10\n@namespace   dym.sh\n@author      Dym Sohin\n@homepageURL https://dym.sh/behance-img-rightclick/\n@supportURL  https://source.garden/styles/behance-img-rightclick/issues/\n@license     0BSD\n==/UserStyle== */"
+      },
+      {
+        "code": "#lightbox-wrap img \n{ pointer-events: unset }",
+        "urlPrefixes": [
+          "https://www.behance.net/"
+        ]
+      }
+    ],
+    "updateDate": 1713959554410,
+    "_id": "f8fa2609-6f3b-4103-aa14-4d99cdd53ca4",
+    "_rev": 1713959554410,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1713959587763,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        gravatar-chevron\n@description better chevron for buttons with icons, i.e. «Read our Privacy Policy»\n@version     2023.12.18\n@namespace   dym.sh\n@author      Dym Sohin\n@homepageURL https://dym.sh/gravatar-chevron/\n@updateURL   https://source.garden/styles/gravatar-chevron/raw/branch/latest/style.user.css\n@supportURL  https://source.garden/styles/gravatar-chevron/issues/\n@license     0BSD\n==/UserStyle== */\n\n@-moz-document domain(\"gravatar.com\") {\n\n.g-has-chevron-external::after {\n  content: \"⭟\";\n  font-weight: 700;\n  margin-left: 0.75rem;\n  line-height: 0.75rem;\n  background: var(--g-color-accent);\n  padding: 0.125rem;\n  color: var(--g-background);\n  border-radius: 0.125rem;\n}\n\n.g-has-chevron-external:active::after\n, .g-has-chevron-external:hover::after {\n  background: var(--g-color);\n}\n\n\n.g-has-chevron-external::after\n, .g-has-chevron-external:active::after\n, .g-has-chevron-external:hover::after {\n  left: unset;\n  margin-right: unset;\n  top: unset;\n  -webkit-transform: unset;\n  transform: unset;\n  -webkit-transform-origin: unset;\n  transform-origin: unset;\n}\n\n}\n",
+    "usercssData": {
+      "name": "gravatar-chevron",
+      "description": "better chevron for buttons with icons, i.e. «Read our Privacy Policy»",
+      "version": "2023.12.18",
+      "namespace": "dym.sh",
+      "author": "Dym Sohin",
+      "homepageURL": "https://dym.sh/gravatar-chevron/",
+      "updateURL": "https://source.garden/styles/gravatar-chevron/raw/branch/latest/style.user.css",
+      "supportURL": "https://source.garden/styles/gravatar-chevron/issues/",
+      "license": "0BSD"
+    },
+    "author": "Dym Sohin",
+    "description": "better chevron for buttons with icons, i.e. «Read our Privacy Policy»",
+    "url": "https://dym.sh/gravatar-chevron/",
+    "updateUrl": "https://source.garden/styles/gravatar-chevron/raw/branch/latest/style.user.css",
+    "name": "gravatar-chevron",
+    "originalDigest": "ce7c919323dac157b36d8de60af6e2f4d3b4f656",
+    "_id": "fb5128bd-a633-4b8f-bea8-a27e6985a4f4",
+    "_rev": 1713959587764,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1713959597271,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        translit-dark\n@description Dark Mode for Translit.net\n@version     2023.10.06\n@namespace   translit.net\n@author      Dym Sohin\n@homepageURL https://dym.sh/translit-dark/\n@updateURL   https://source.garden/styles/translit-dark/raw/branch/latest/style.user.css\n@supportURL  https://source.garden/styles/translit-dark/issues\n@license     0BSD\n==/UserStyle== */\n\n@-moz-document domain(\"translit.net\")\n{\n\n* { background : transparent !important\n  ; color : #bbb !important\n  }\n\nbody\n, .bcharset\n  { background : #222 !important }\n\nul#tTabCell li:nth-of-type(2n)\n  { background : #333 !important }\n\ninput\n, button\n, select\n, textarea\n  { background : #333 !important\n  ; border : 1px solid #222 !important\n  }\n\n.tTextArea120\n, .tWzgBlock120\n  { padding-right : 0 !important }\n\np\n, .tBottomContainer\n, .tLogoContainer\n, .tCookiesButtonA\n, .tAdvContainer\n, .tBoxAdv\n, .tBannerRight120\n, #placeholder\n  { display : none !important }\n\n}\n",
+    "usercssData": {
+      "name": "translit-dark",
+      "description": "Dark Mode for Translit.net",
+      "version": "2023.10.06",
+      "namespace": "translit.net",
+      "author": "Dym Sohin",
+      "homepageURL": "https://dym.sh/translit-dark/",
+      "updateURL": "https://source.garden/styles/translit-dark/raw/branch/latest/style.user.css",
+      "supportURL": "https://source.garden/styles/translit-dark/issues",
+      "license": "0BSD"
+    },
+    "author": "Dym Sohin",
+    "description": "Dark Mode for Translit.net",
+    "url": "https://dym.sh/translit-dark/",
+    "updateUrl": "https://source.garden/styles/translit-dark/raw/branch/latest/style.user.css",
+    "name": "translit-dark",
+    "originalDigest": "1feaf0e9b0e38adc9857cb5feadef0f7dfc6438c",
+    "_id": "193da0ee-6329-482e-9c68-a557da4c5174",
+    "_rev": 1713959597272,
+    "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1714495560394,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name        tonsky-neutral-gray\n@description Neutral Gray for Tonsky.me\n@version     2024.04.30\n@namespace   source.garden\n@author      Dym Sohin\n@homepageURL https://dym.sh/tonsky-neutral-gray/\n@updateURL   https://source.garden/styles/tonsky-neutral-gray/raw/branch/latest/style.user.css\n@supportURL  https://source.garden/styles/tonsky-neutral-gray/issues/\n@license     0BSD\n==/UserStyle== */\n\n@-moz-document url-prefix(\"https://tonsky.me/\")\n{\n  body {\n    background: #ccc;\n  }\n  .about_photo {\n    filter: grayscale(1);\n  }\n}\n",
+    "usercssData": {
+      "name": "tonsky-neutral-gray",
+      "description": "Neutral Gray for Tonsky.me",
+      "version": "2024.04.30",
+      "namespace": "source.garden",
+      "author": "Dym Sohin",
+      "homepageURL": "https://dym.sh/tonsky-neutral-gray/",
+      "updateURL": "https://source.garden/styles/tonsky-neutral-gray/raw/branch/latest/style.user.css",
+      "supportURL": "https://source.garden/styles/tonsky-neutral-gray/issues/",
+      "license": "0BSD"
+    },
+    "author": "Dym Sohin",
+    "description": "Neutral Gray for Tonsky.me",
+    "url": "https://dym.sh/tonsky-neutral-gray/",
+    "updateUrl": "https://source.garden/styles/tonsky-neutral-gray/raw/branch/latest/style.user.css",
+    "name": "tonsky-neutral-gray",
+    "originalDigest": "0d3e50dce1a4d841402ec902afde9da614b957a6",
+    "_id": "3b9e8d29-451c-456f-af65-f1051238691c",
+    "_rev": 1714495560395,
+    "id": 5
+  }
+]

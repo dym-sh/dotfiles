@@ -1,0 +1,21 @@
+[
+  {
+    "localRoot": "root________",
+    "strategy": "default",
+    "syncInterval": 480,
+    "nestedSync": true,
+    "failsafe": true,
+    "allowNetwork": false,
+    "type": "nextcloud-bookmarks",
+    "url": "https://docs.aggents.com",
+    "username": "dym",
+    "password": "ULDxurPAPzSpjC8LJPkQ84qDMSL5ulppw3jl5bRtSaSofeBJphAZhx1FpjGT9EBqJYbnnlqp",
+    "serverRoot": "",
+    "includeCredentials": false,
+    "allowRedirects": false,
+    "enabled": true,
+    "syncing": 0.5353535353535354,
+    "scheduled": false,
+    "error": null
+  }
+]
